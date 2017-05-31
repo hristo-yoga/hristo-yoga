@@ -48,6 +48,11 @@ defaults:
     values:
       layout: "page"
 
+  -
+    scope:
+      path: книги/затворът
+    values:
+      parent_path: книги.md книги/затворът/index.md
 
 header_pages:
   - книги.md
