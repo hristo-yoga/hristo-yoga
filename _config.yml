@@ -16,6 +16,7 @@
 author: Христо Илиев
 title: Христо Йога
 email: hristo_mitev@abv.bg
+author_image: /images/iliev.jpg
 description: > # this means to ignore newlines until "baseurl:"
    Христо Илиев е йога и скулптор. Автор е на две книги - "Затворът" и
    "Фрагменти от цялото". Преподава и работи в град Добрич, България.
@@ -24,7 +25,7 @@ lang: bg
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
-github_username:
+github_username: hristo-yoga
 
 # Build settings
 markdown: kramdown
