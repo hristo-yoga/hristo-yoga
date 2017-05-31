@@ -38,3 +38,13 @@ exclude:
 
 # Outputting
 timezone: Europe/Sofia
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+
