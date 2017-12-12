@@ -18,7 +18,20 @@
             {% endif %}
             </li>
             {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              <li id="emailContainer">
+                <script type="text/javascript">
+                  {% assign email = site.email|split: '@' %}
+                  var a = document.createElement('a');
+                  a.href = 'mailto:';
+                  a.href += '{{ email[0] }}';
+                  a.href += '@';
+                  a.href += '{{ email[1] }}';
+                  a.innerHTML = '{{ email[0] }}';
+                  a.innerHTML += '@';
+                  a.innerHTML += '{{ email[1] }}';
+                  document.getElementById('emailContainer').appendChild(a);
+                </script>
+              </li>
             {% endif %}
         </ul>
       </div>
